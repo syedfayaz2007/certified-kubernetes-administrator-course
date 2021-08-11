@@ -24,8 +24,9 @@ In this section, we will take a look at rolling updates and rollback in a deploy
   
 ## Deployment Strategies
 - There are 2 types of deployment strategies
-  1. Recreate
-  2. RollingUpdate (Default Strategy)
+  1. Recreate  --> Destroy all pods and re-create --> App Down
+  2. RollingUpdate (Default Strategy)--> destroy one at a time and bring a new version up ... one by one 
+     Defalut one is RollingUpdate
   
   ![dst](../../images/dst.PNG)
   
