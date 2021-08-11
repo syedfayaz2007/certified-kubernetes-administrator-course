@@ -4,6 +4,11 @@
 In this section, we will take a look at **`Namespaces`**
 
 So far in this course we have created **`Objects`** such as **`PODs`**, **`Deployments`** and **`Services`** in our cluster. Whatever we have been doing we have been doing in a **`NAMESPACE`**.
+
+- Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called namespaces.
+- Namespaces provide a scope for names. Names of resources need to be unique within a namespace, but not across namespaces. Namespaces cannot be nested.
+- Namespaces are a way to divide cluster resources between multiple users 
+
 - This namespace is the **`default`** namespace in kuberntes. It is automatically created when kubernetes is setup initially.
 
   ![ns](../../images/ns.PNG)
