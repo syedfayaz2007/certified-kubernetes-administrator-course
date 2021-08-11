@@ -13,7 +13,7 @@ In this section, we will take a look at kube-scheduler.
 - There are many nodes and many containers, want to make sure that the right container ends up on the right node.
 - The scheduler goes through 2 phases to identify the best node for the pod.
   - In the first phase, the scheduler filters out the nodes that do not fit for the profile for this pod. For example the nodes that do not have sufficient memory and cpu resources requested by the pod. In this case, the 2 small nodes are filtered out, now we are left with 2 nodes on which the pod can be placed. Now, how does the scheduler pick one from the two? 
-  - In the second phase, the scheduler ranks the nodes to identify the best fit for the pod, it uses a priority function to assign a score to the node on a scale of 0 to 10
+  - In the second phase, the scheduler ranks the nodes to identify the best fit for the pod, it uses a priority function to assign a score to the node on a scale of 0 to 10  -> Amount of resounces free after placing POD
 
     ![kube-scheduler2](../../images/kube-scheduler2.PNG)
     
