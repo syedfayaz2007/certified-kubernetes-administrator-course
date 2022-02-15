@@ -8,7 +8,7 @@
   - How to operate ETCD?
   
  ## What is a ETCD?
-     - ETCD is a distributed reliable key-value store that is simple, secure & Fast.
+     - ETCD is a distributed reliable key-value store that is simple, secure & Fast. that needs to be accessed by a distributed system or cluster of machines.
      
 ## What is a Key-Value Store
    - Traditionally, databases have been in tabular format, you must have heared about SQL or Relational databases. They store data in rows and columns
