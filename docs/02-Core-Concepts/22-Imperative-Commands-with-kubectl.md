@@ -31,3 +31,12 @@ Imperative comes under 2 ways --
 
 -o yaml: This will output the resource definition in YAML format on screen.
   
+  
+  Kubectl Apply Command : 
+  When you run apply command by using yaml file 
+  then it will create a new object file config with in K8 memory with few additional status parameters. 
+  
+  When you run apply command then it does few more things internally. 
+  - it first creates the json file as last applied configuration.  Going forward any changes happened it will compare all three files. 
+  - Ex : if any changes on the yaml file then it will compare with live object ... As a last step it will update the json file of last applied configuration. 
+  - 
